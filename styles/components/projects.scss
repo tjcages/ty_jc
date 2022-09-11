@@ -1,0 +1,36 @@
+.line-el {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.5s ease-out;
+}
+
+@media screen and (max-width: 991px) {
+  .line-el {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.line-el:hover {
+  color: black !important;
+}
+
+.line-el:hover:before {
+  content: " ";
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 0;
+  left: -24%;
+  right: -24%;
+  bottom: 0;
+  pointer-events: none;
+}

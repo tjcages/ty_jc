@@ -1,0 +1,55 @@
+.tx-xl {
+  font-size: 3.5vw;
+  line-height: 1em;
+  text-transform: none;
+  font-family: "Holla";
+}
+
+.tx-xl strong {
+  margin-left: 8em;
+  font-weight: 400;
+}
+
+.tx-intro {
+  display: inline-block;
+  padding-right: 5vw;
+  padding-left: 2vw;
+  font-family: dehogb, sans-serif;
+  font-size: 12px;
+  line-height: 0.9em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.work-link {
+  grid-column: 2;
+  -ms-grid-column: 2;
+  grid-column-start: 2;
+  -ms-grid-column-span: 2;
+  grid-column-end: 2;
+  grid-row: 1;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+
+.tx-xl .italic {
+  font-style: italic;
+}
+
+@media screen and (max-width: 991px) {
+  .tx-xl {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .tx-xl {
+    font-size: 8vw;
+  }
+
+  .tx-xl strong {
+    margin-left: 4em;
+  }
+}

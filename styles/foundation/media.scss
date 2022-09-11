@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones */
+
+  [data-bp="tab"] {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones */
+
+  [data-bp="mob"] {
+    display: none;
+  }
+
+  .gl-img-w {
+    width: calc((100vw) / 3.5);
+  }
+}

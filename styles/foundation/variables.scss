@@ -1,0 +1,18 @@
+/* VARIABLES 
+*/
+:root {
+  /* Durations */
+  --t-main: 1.1s;
+  --t-half: calc(var(--t-main) / 2);
+  /* Easings */
+  --eas-expo-inout: cubic-bezier(1, 0, 0, 1);
+  --eas-quart-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --eas-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+  /* Colors */
+  --col-bl: #050505;
+  --col-wh: #f1f6f8;
+  --col-alp: rgba(1, 0, 0, 0);
+}
+
+/* --------------- List Item Background 
+*/
