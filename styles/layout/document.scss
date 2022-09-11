@@ -1956,37 +1956,6 @@ textarea.w-select {
   min-height: 100vh;
 }
 
-.c {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 96vw;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-}
-
-.c.nav {
-  min-height: 0vh;
-}
-
 .c.is-sp {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -2251,17 +2220,6 @@ textarea.w-select {
 
 .s.hero.no-cap {
   height: auto;
-}
-
-.s.nav {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
-  z-index: 10;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
 }
 
 .s.footer {
@@ -2812,10 +2770,6 @@ textarea.w-select {
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-}
-
-.c-u.nav {
-  min-height: 0vh;
 }
 
 .c-u.is-sp {
@@ -3707,13 +3661,6 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 991px) {
-  .c.nav {
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-
   .c.fill {
     width: 100vw;
     height: auto;
@@ -3734,10 +3681,6 @@ textarea.w-select {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
-  .u {
-    width: 12vw;
-  }
-
   .u._2 {
     width: 24vw;
   }
@@ -3748,10 +3691,6 @@ textarea.w-select {
 
   .u._4 {
     width: 48vw;
-  }
-
-  .u._5 {
-    width: 60vw;
   }
 
   .u._6 {
@@ -3818,13 +3757,6 @@ textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
-  .c.nav {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
   .c.gr {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -3839,10 +3771,6 @@ textarea.w-select {
     margin-top: 20vh;
   }
 
-  .u {
-    width: 24vw;
-  }
-
   .u._2 {
     width: 48vw;
   }
@@ -3852,10 +3780,6 @@ textarea.w-select {
   }
 
   .u._4 {
-    width: 96vw;
-  }
-
-  .u._5 {
     width: 96vw;
   }
 

@@ -246,15 +246,7 @@ const Projects = () => {
                         position: "relative",
                       }}
                     >
-                      <div
-                        style={{
-                          position: "relative",
-                          display: "inline-block",
-                          transform: "translate(0px, 0%)",
-                        }}
-                      >
-                        [ {item.num} ]
-                      </div>
+                      [ {item.num} ]
                     </div>
                   </div>
                 </div>
@@ -280,15 +272,7 @@ const Projects = () => {
                         position: "relative",
                       }}
                     >
-                      <div
-                        style={{
-                          position: "relative",
-                          display: "inline-block",
-                          transform: "translate(0px, 0%)",
-                        }}
-                      >
-                        {item.year}
-                      </div>
+                      {item.year}
                     </div>
                   </div>
                 </div>
@@ -301,15 +285,7 @@ const Projects = () => {
                         position: "relative",
                       }}
                     >
-                      <div
-                        style={{
-                          position: "relative",
-                          display: "inline-block",
-                          transform: "translate(0px, 0%)",
-                        }}
-                      >
-                        {item.build}
-                      </div>
+                      {item.build}
                     </div>
                   </div>
                 </div>
@@ -322,15 +298,7 @@ const Projects = () => {
                         position: "relative",
                       }}
                     >
-                      <div
-                        style={{
-                          position: "relative",
-                          display: "inline-block",
-                          transform: "translate(0px, 0%)",
-                        }}
-                      >
-                        ↗ {item.result}
-                      </div>
+                      ↗ {item.result}
                     </div>
                   </div>
                 </div>

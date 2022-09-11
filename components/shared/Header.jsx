@@ -11,7 +11,7 @@ const Header = () => {
           </a>
         </div>
         <div className="c-nav-col is-cent">
-          <div className="u _5">
+          <div className="u _5 desktop">
             A experimental practice targeting unique based outputs
           </div>
           <div className="u _1">
@@ -20,7 +20,7 @@ const Header = () => {
           <div data-bp="tab" className="u"></div>
           <div data-bp="tab" className="u"></div>
           <div data-bp="tab" className="u"></div>
-          <div className="u _4">running on virtual & physical mediums</div>
+          <div className="u _4 desktop">running on virtual & physical mediums</div>
           <div className="u _5">
             PARTY ROUND & [GALLERY] + NY Founder Group ©
           </div>

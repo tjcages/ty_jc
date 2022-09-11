@@ -45,14 +45,14 @@ class Main extends React.Component {
       this.transition(data);
     });
 
-    // this.scroll = new Scroll();
+    this.scroll = new Scroll();
     this.dom = new Dom();
 
-    if (this.isTablet) {
-      this.scroll = new MobileScroll();
-    } else {
-      this.scroll = new Scroll();
-    }
+    // if (this.isTablet) {
+    //   this.scroll = new MobileScroll();
+    // } else {
+    //   this.scroll = new Scroll();
+    // }
 
     // gl
     this.gl = new Gl();
