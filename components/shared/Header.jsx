@@ -15,17 +15,14 @@ const Header = () => {
             A experimental practice targeting unique based outputs
           </div>
           <div className="u _1">
-            DE CO <span data-clock="it">0000</span>
-          </div>
-          <div className="u _1">
-            NY NY <span data-clock="ba">0001</span>
+            NY USA <span data-clock="ba">0001</span>
           </div>
           <div data-bp="tab" className="u"></div>
           <div data-bp="tab" className="u"></div>
           <div data-bp="tab" className="u"></div>
           <div className="u _4">running on virtual & physical mediums</div>
           <div className="u _5">
-            Repped by PARTY ROUND & [GALLERY] + NY Founder Group ©
+            PARTY ROUND & [GALLERY] + NY Founder Group ©
           </div>
         </div>
         <div className="c-nav-col is-right">
