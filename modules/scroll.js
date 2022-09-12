@@ -15,6 +15,8 @@ import Prefix from "prefix";
 
 export default class Scroll {
   constructor(config = {}) {
+    console.log("Config")
+    console.log(config)
     // 1. config
     const {
       wrapper = "[data-scroll]",
@@ -24,6 +26,8 @@ export default class Scroll {
       percentage = true,
       events = false,
     } = config;
+
+    console.log(config)
 
     // this.isTablet = isTablet();
 

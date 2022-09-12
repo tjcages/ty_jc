@@ -7,7 +7,7 @@ import { Router } from "../modules/router";
 import Scroll from "../modules/scroll";
 import MobileScroll from "../modules/mobileScroll";
 
-import { isTablet } from "../modules/utils/agents";
+import { isTablet, isMobile } from "../modules/utils/agents";
 
 import Header from "./shared/Header";
 import Canvas from "./shared/Canvas";
@@ -28,6 +28,7 @@ class Main extends React.Component {
     this.load();
 
     this.isTablet = isTablet();
+    this.isMobile = isMobile();
   }
 
   load() {
@@ -45,14 +46,13 @@ class Main extends React.Component {
       this.transition(data);
     });
 
-    this.scroll = new Scroll();
     this.dom = new Dom();
 
-    // if (this.isTablet) {
-    //   this.scroll = new MobileScroll();
-    // } else {
-    //   this.scroll = new Scroll();
-    // }
+    if (this.isTablet || this.isMobile) {
+      this.scroll = new Scroll({ factor: 1 });
+    } else {
+      this.scroll = new Scroll();
+    }
 
     // gl
     this.gl = new Gl();
