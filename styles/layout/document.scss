@@ -2346,19 +2346,6 @@ textarea.w-select {
   align-items: center;
 }
 
-.detail {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3.2em;
-  margin-bottom: 3.2em;
-}
-
-.detail.is-first {
-  margin-top: 0em;
-}
-
 .icon {
   padding-right: 1em;
   padding-left: 1em;
@@ -3651,10 +3638,6 @@ textarea.w-select {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
-  .u._3 {
-    width: 36vw;
-  }
-
   .u._4 {
     width: 48vw;
   }
@@ -3732,10 +3715,6 @@ textarea.w-select {
 
   .u._2 {
     width: 48vw;
-  }
-
-  .u._3 {
-    width: 72vw;
   }
 
   .u._4 {

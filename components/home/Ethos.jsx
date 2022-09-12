@@ -1,6 +1,6 @@
 const Ethos = () => {
   return (
-    <section className="s footer">
+    <section className="s">
       <div className="c">
         <div className="u _6"></div>
         <div className="detail-c">
@@ -21,7 +21,7 @@ const Ethos = () => {
             <div className="u _1"></div>
             <div data-watch="inview" className="u _3 inview">
               <div data-dom="bl">
-                fw_et is a continuous experimental research practice, sprung
+                ty_jc is a continuous experimental research practice, sprung
                 from data, artificial intelligence, photography and mixed media
                 as our main research ground. <br />
                 <br />

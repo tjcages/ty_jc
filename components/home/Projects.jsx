@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/future/image";
 
 const data = [
   {
@@ -219,15 +220,14 @@ const Projects = () => {
       <div data-mouse="calc" className="w-dyn-list">
         <div className="project-image-container">
           <div data-gl="homei" className="home-img">
-            <video
-              crossOrigin="anonymous"
-              playsInline=""
-              autoPlay=""
-              loop=""
-              muted=""
-              src="https://replicate.com/api/models/andreasjansson/stable-diffusion-animation/files/688a4c61-b298-4386-8c1f-5df3eeaf842e/output.mp4"
-              width="100%"
-            ></video>
+            <Image
+              crossOrigin=""
+              loading="eager"
+              src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/63168234191886565f7b6c17_62ce33f67ec6b08ed8de4b7d_greyscale.png"
+              alt=""
+              width={256}
+              height={256}
+            />
           </div>
         </div>
         <div role="list" className="c din-el">

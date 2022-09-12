@@ -17,40 +17,26 @@ const Intro = () => {
           <div
             id="home-image-1"
             className="gl-img-w is-flip"
-            data-title="Startup Supreme"
+            data-title="Ads Through the Decade"
           >
             <div data-utils="hid" className="grid-item w-embed">
               <figure data-gl="grid">
-                <Image
-                  crossOrigin=""
-                  loading="eager"
-                  src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/63168234191886565f7b6c17_62ce33f67ec6b08ed8de4b7d_greyscale.png"
-                  alt=""
-                  width={256}
-                  height={256}
-                />
+              <video
+              crossOrigin="anonymous"
+              playsInline={true}
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              src="https://replicate.com/api/models/andreasjansson/stable-diffusion-animation/files/688a4c61-b298-4386-8c1f-5df3eeaf842e/output.mp4"
+              width="100%"
+            ></video>
               </figure>
             </div>
           </div>
-          {/* <div id="home-image-2" className="gl-img-w is-flip" data-title="Monolith">
-            <div data-utils="hid" className="grid-item w-embed">
-              <figure data-gl="grid" className="grid-item">
-                <video
-                  crossOrigin="anonymous"
-                  playsInline=""
-                  autoPlay=""
-                  loop=""
-                  muted=""
-                  src="https://replicate.com/api/models/andreasjansson/stable-diffusion-animation/files/56df19d7-3776-4119-a0f9-d278b26a4a8a/output.mp4"
-                  width="100%"
-                ></video>
-              </figure>
-            </div>
-          </div> */}
           <div
-            id="home-image-3"
+            id="home-image-2"
             className="gl-img-w"
-            data-title="Pixel sorting"
+            data-title="Startup Supreme"
           >
             <div data-utils="hid" className="grid-item w-embed">
               <figure data-gl="grid">
@@ -65,24 +51,10 @@ const Intro = () => {
               </figure>
             </div>
           </div>
-          {/* <div id="home-image-4" className="gl-img-w" data-title="Pixel sorting">
-            <div data-utils="hid" className="grid-item w-embed">
-              <figure data-gl="grid">
-                <Image
-                  crossOrigin=""
-                  loading="eager"
-                  src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316933e196af5752d003e18_IMG_0208.JPG"
-                  alt=""
-                  width={256}
-                  height={256}
-                />
-              </figure>
-            </div>
-          </div> */}
           <div
-            id="home-image-5"
+            id="home-image-3"
             className="gl-img-w is-flip lg"
-            data-title="The Butterfly Nebula"
+            data-title="Stretching Time"
           >
             <div data-utils="hid" className="grid-item w-embed">
               <figure data-gl="grid">
@@ -91,16 +63,16 @@ const Intro = () => {
                   loading="eager"
                   src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316933e196af5752d003e18_IMG_0208.JPG"
                   alt=""
-                  width={256}
-                  height={256}
+                  width={356}
+                  height={356}
                 />
               </figure>
             </div>
           </div>
           <div
-            id="home-image-6"
+            id="home-image-4"
             className="gl-img-w is-flip lg"
-            data-title="Death"
+            data-title="Party Round Mag"
           >
             <div data-utils="hid" className="grid-item w-embed">
               <figure data-gl="grid">
@@ -109,17 +81,17 @@ const Intro = () => {
                   loading="eager"
                   src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6319530265398e0f2f0bb107_throwback.jpg"
                   alt=""
-                  width={256}
-                  height={256}
+                  width={356}
+                  height={356}
                 />
               </figure>
             </div>
           </div>
           <div
-            id="home-image-7"
+            id="home-image-5"
             data-utils="hid"
             className="gl-img-w"
-            data-title="Startup Supreme"
+            data-title="Luminar"
           >
             <div className="grid-item w-embed">
               <figure data-gl="grid">
@@ -134,7 +106,7 @@ const Intro = () => {
               </figure>
             </div>
           </div>
-          <div id="home-image-8" className="gl-img-w" data-title="Skull">
+          <div id="home-image-6" className="gl-img-w" data-title="Spirituality">
             <div data-utils="hid" className="grid-item w-embed">
               <figure data-gl="grid">
                 <Image

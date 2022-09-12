@@ -49,7 +49,7 @@ class Main extends React.Component {
     this.dom = new Dom();
 
     if (this.isTablet || this.isMobile) {
-      this.scroll = new Scroll({ factor: 1 });
+      this.scroll = new Scroll({ factor: 0.5 });
     } else {
       this.scroll = new Scroll();
     }

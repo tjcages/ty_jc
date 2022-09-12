@@ -82,9 +82,12 @@ video {
 .gl-img-w {
   counter-increment: heroIndex;
   position: relative;
-  // height: calc((80vh) / 3);
+  height: calc((80vh) / 4);
   aspect-ratio: 1/ 1;
   object-fit: cover;
+}
+.gl-img-w.lg {
+  height: calc((80vh) / 3);
 }
 
 .grid-item {
@@ -121,6 +124,12 @@ video {
 
 .gl-img-w:hover:after {
   content: "( " counter(heroIndex) " )\A" attr(data-title);
+}
+
+@media screen and (max-width: 767px) {
+  .gl-img-w:hover:after {
+    content: "( " counter(heroIndex) " )";
+  }
 }
 
 .gl-img {

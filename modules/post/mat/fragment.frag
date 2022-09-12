@@ -173,7 +173,7 @@ void main() {
   final_img.rgb = blendOverlay(
     final_img, 
     scalnline_diff, 
-    .1 + abs(sin(u_time) * .2)
+    .6 + abs(sin(u_time) * .2)
   );
 
   final_img.rgb += (scalnline_diff) * .3 * a_trans;

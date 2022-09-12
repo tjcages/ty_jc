@@ -25,10 +25,10 @@ const Images = () => {
         >
           <video
             crossOrigin="anonymous"
-            playsInline=""
-            autoPlay=""
-            loop=""
-            muted=""
+            playsInline={true}
+            autoPlay={true}
+            loop={true}
+            muted={true}
             src="https://assets.website-files.com/6176c3b63b320c8e291dda54/630617294dc69423131d7a61_b2efca96-9d60-47b4-bdaf-60a0655210ff%20(1)-transcode.mp4"
             width="100%"
           ></video>
