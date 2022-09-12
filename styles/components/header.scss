@@ -135,25 +135,6 @@
   text-transform: none;
 }
 
-.gl-img-w {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: dehogb, sans-serif;
-  font-style: italic;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 .footer {
   .u._3 {
     width: 24vw;
@@ -197,9 +178,6 @@
   }
 }
 @media screen and (max-width: 479px) {
-  .gl-img-w {
-    white-space: nowrap;
-  }
   .desktop {
     display: none;
   }

@@ -81,7 +81,7 @@ const Intro = () => {
           </div> */}
           <div
             id="home-image-5"
-            className="gl-img-w is-flip"
+            className="gl-img-w is-flip lg"
             data-title="The Butterfly Nebula"
           >
             <div data-utils="hid" className="grid-item w-embed">
@@ -99,7 +99,7 @@ const Intro = () => {
           </div>
           <div
             id="home-image-6"
-            className="gl-img-w is-flip"
+            className="gl-img-w is-flip lg"
             data-title="Death"
           >
             <div data-utils="hid" className="grid-item w-embed">
