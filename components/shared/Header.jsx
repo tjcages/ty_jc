@@ -14,7 +14,7 @@ const Header = () => {
           <div className="u _5 desktop">
             A experimental practice targeting unique based outputs
           </div>
-          <div className="u _1">
+          <div className="u">
             NY USA <span data-clock="ba">0001</span>
           </div>
           <div data-bp="tab" className="u"></div>
