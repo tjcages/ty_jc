@@ -20,7 +20,7 @@ const Ethos = () => {
             </div>
             <div className="u _1"></div>
             <div data-watch="inview" className="u _3 inview">
-              <div data-dom="bl">
+              <div className="j" data-dom="bl">
                 ty_jc is a continuous experimental research practice, sprung
                 from data, artificial intelligence, photography and mixed media
                 as our main research ground. <br />
@@ -56,7 +56,7 @@ const Ethos = () => {
             </div>
             <div className="u _1"></div>
             <div data-watch="inview" className="u _3 inview">
-              <div data-dom="bl">
+              <div className="j" data-dom="bl">
                 Being nothing more than an experimental exercise, we take great
                 pride in making every step meaningful. <br />
                 <br />
@@ -87,7 +87,7 @@ const Ethos = () => {
             </div>
             <div className="u _1"></div>
             <div data-watch="inview" className="u _3 inview">
-              <div data-dom="bl">
+              <div className="j" data-dom="bl">
                 this SHARED artistic practice which I have the pleasure to lead
                 could not be possible without the participation of the whole
                 studio. Thanks to F, G, J. and D. We’re currently operating
