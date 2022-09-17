@@ -34,3 +34,19 @@
   bottom: 0;
   pointer-events: none;
 }
+
+.project-image-container {
+  position: absolute;
+  right: 70px;
+  bottom: 70px;
+  width: 356px;
+
+  @media screen and (max-width: 991px) {
+    & {
+      position: absolute;
+      right: 12px;
+      top: 64px;
+      width: 256px;
+    }
+  }
+}

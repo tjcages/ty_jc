@@ -78,18 +78,6 @@ video {
   will-change: transform;
 }
 
-/* Pseudo Hero Element */
-.gl-img-w {
-  counter-increment: heroIndex;
-  position: relative;
-  height: calc((80vh) / 4);
-  aspect-ratio: 1/ 1;
-  object-fit: cover;
-}
-.gl-img-w.lg {
-  height: calc((80vh) / 3);
-}
-
 .grid-item {
   aspect-ratio: 1/ 1;
 }
@@ -100,43 +88,6 @@ video {
 
 .sl {
   height: 80vh;
-}
-
-.gl-img-w:after {
-  content: "( " counter(heroIndex) " )";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transform: translateX(-120%);
-  font-size: 10px;
-  white-space: pre-wrap;
-  text-align: end;
-  font-family: "Holla";
-}
-
-.is-flip:after {
-  left: auto;
-  right: 0px;
-  transform: translateX(120%);
-  text-align: start;
-}
-
-.gl-img-w:hover:after {
-  content: "( " counter(heroIndex) " )\A" attr(data-title);
-}
-
-@media screen and (max-width: 767px) {
-  .gl-img-w:hover:after {
-    content: "( " counter(heroIndex) " )";
-  }
-}
-
-.gl-img {
-  object-fit: cover;
-  height: 0px;
-  width: 0px;
-  visibility: hidden;
 }
 
 .gl-li-item {

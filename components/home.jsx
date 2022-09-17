@@ -5,7 +5,6 @@ import Preloader from "../modules/preloader";
 import { Router } from "../modules/router";
 
 import Scroll from "../modules/scroll";
-import MobileScroll from "../modules/mobileScroll";
 
 import { isTablet, isMobile } from "../modules/utils/agents";
 

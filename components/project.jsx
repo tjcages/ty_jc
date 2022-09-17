@@ -494,7 +494,7 @@ class Main extends React.Component {
                     id="w-node-_96c3e5d9-51b9-f005-ef75-26fc64b2ba67-6b813456"
                     className="p-notes"
                   >
-                    <div data-dom="a" className="note-c is-spaced">
+                    <div data-dom="a" className="intro-note is-spaced">
                       <div className="u _2">
                         <div data-note="img">
                           <div className="p-caption-w w-richtext">
