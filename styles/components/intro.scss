@@ -98,7 +98,7 @@
     content: "( " counter(heroIndex) " )";
     display: block;
     position: absolute;
-    top: 0px;
+    top: 32px;
     left: 0px;
     transform: translateX(-120%);
     font-size: 10px;
@@ -131,6 +131,7 @@
 .is-flip:after {
   left: auto;
   right: 0px;
+  top: 12px;
   transform: translateX(120%);
   text-align: start;
 }
@@ -255,6 +256,6 @@
     width: 96vw;
   }
   .u._2 {
-    width: 56vw;
+    width: 43vw;
   }
 }

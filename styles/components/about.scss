@@ -3,6 +3,27 @@
   line-height: 1em;
   text-transform: none;
   font-family: "Holla";
+
+  &.italic {
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 991px) {
+    & {
+      font-size: 5vw;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    & {
+      font-size: 8vw;
+      text-align: right;
+    }
+
+    & strong {
+      margin-left: 4em;
+    }
+  }
 }
 
 .tx-xl strong {
@@ -19,37 +40,26 @@
   line-height: 0.9em;
   font-style: italic;
   font-weight: 400;
+
+  @media screen and (max-width: 991px) {
+    & {
+      transform: translateY(-6px);
+    }
+  }
 }
 
 .work-link {
-  grid-column: 2;
-  -ms-grid-column: 2;
+  display: inline-block;
+  // grid-column: 2;
   grid-column-start: 2;
-  -ms-grid-column-span: 2;
-  grid-column-end: 2;
+  // grid-column-end: 2;
   grid-row: 1;
-  -ms-grid-row: 1;
   grid-row-start: 1;
-  -ms-grid-row-span: 1;
   grid-row-end: 2;
-}
 
-.tx-xl .italic {
-  font-style: italic;
-}
-
-@media screen and (max-width: 991px) {
-  .tx-xl {
-    font-size: 5vw;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .tx-xl {
-    font-size: 8vw;
-  }
-
-  .tx-xl strong {
-    margin-left: 4em;
+  @media screen and (max-width: 991px) {
+    & {
+      grid-column-end: 4;
+    }
   }
 }

@@ -1,6 +1,14 @@
+import React, { useState, useEffect } from "react";
 import Image from "next/future/image";
+import { isTablet } from "../../modules/utils/agents";
 
 const Intro = () => {
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    setMobile(isTablet());
+  }, []);
+
   return (
     <main className="s hero">
       <div data-dom="h" data-layer="under" className="logo-container">
@@ -124,7 +132,7 @@ const Intro = () => {
           className="intro-note"
           style={{ opacity: 1, visibility: "inherit" }}
         >
-          <div className="note-num">(1 - 8)</div>
+          <div className="note-num">{mobile ? "(1 - 4)" : "(1 - 6)"}</div>
           <div className="u _2">
             <div>
               <span className="is-alt">Recent Projects,</span> mixed

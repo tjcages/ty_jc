@@ -150,7 +150,7 @@ class Main extends React.Component {
                         position: "relative",
                       }}
                     >
-                      ↗ Home
+                      Home ¬
                     </div>
                   </div>
                 </a>
@@ -163,7 +163,7 @@ class Main extends React.Component {
                         position: "relative",
                       }}
                     >
-                      ↗ Work
+                      Work ¬
                     </div>
                   </div>
                 </a>

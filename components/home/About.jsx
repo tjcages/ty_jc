@@ -32,7 +32,7 @@ const About = () => {
                     display: "inline-block",
                   }}
                 >
-                  ↗ All Work
+                  All Work ¬
                 </div>
               </div>
             </div>

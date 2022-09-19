@@ -1,5 +1,6 @@
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
 import Image from "next/future/image";
+import { isTablet } from "../../modules/utils/agents";
 
 const data = [
   {
@@ -8,7 +9,7 @@ const data = [
     year: "2022",
     build: "Drop",
     result: "Visit site",
-    href: "http://google.com",
+    href: "https://partyroundmag.com/",
   },
   {
     num: "007",
@@ -16,7 +17,7 @@ const data = [
     year: "2022",
     build: "Events",
     result: "Check out",
-    href: "http://google.com",
+    href: "https://nyctechweek.xyz/",
   },
   {
     num: "006",
@@ -24,7 +25,7 @@ const data = [
     year: "2022",
     build: "Drop",
     result: "Visit site",
-    href: "http://google.com",
+    href: "https://www.startupsupreme.xyz/",
   },
   {
     num: "005",
@@ -40,19 +41,41 @@ const data = [
     year: "2022",
     build: "Site",
     result: "Visit site",
-    href: "http://google.com",
+    href: "https://www.partyround.com/",
   },
   {
     num: "003",
+    title: "GOTTA CATCH THEM ALL",
+    year: "2022",
+    build: "Mini-Drop",
+    result: "Visit drop",
+    href: "https://twitter.com/jordihays/status/1512102958929887232",
+  },
+  {
+    num: "002",
+    title: "THE CURATED AESTHETIC",
+    year: "2022",
+    build: "Experiment",
+    result: "Visit site",
+    href: "https://www.thecuratedaesthetic.xyz/",
+  },
+  {
+    num: "001",
     title: "WEBFLITE",
     year: "2022",
     build: "App",
     result: "Check out",
-    href: "http://google.com",
+    href: "https://www.webflow-cms.com/",
   },
 ];
 
 const Projects = () => {
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    setMobile(isTablet());
+  }, []);
+
   return (
     <section data-gls="list" className="s">
       <div className="c is-st">
@@ -65,15 +88,7 @@ const Projects = () => {
                 position: "relative",
               }}
             >
-              <div
-                style={{
-                  position: "relative",
-                  display: "inline-block",
-                  transform: "translate(0px, 0%)",
-                }}
-              >
-                work and display
-              </div>
+              Work & Display
             </div>
           </div>
         </div>
@@ -127,7 +142,7 @@ const Projects = () => {
                   transform: "translate(0px, 0%)",
                 }}
               >
-                AND CURRENTEXHIBITS IN PHYSICAL AND DIGITAL SPACES ARE
+                AND CURRENT EXHIBITS IN PHYSICAL AND DIGITAL SPACES ARE
                 LISTEDBELOW AS WELL.
               </div>
             </div>
@@ -164,7 +179,7 @@ const Projects = () => {
                 position: "relative",
               }}
             >
-              Year
+              {mobile ? "Year" : "Projects"}
             </div>
           </div>
         </div>
@@ -232,7 +247,14 @@ const Projects = () => {
         </div>
         <div role="list" className="c din-el">
           {data.map((item, i) => (
-            <Link key={i} data-nav="a" href={item.href} aria-current="page">
+            <a
+              key={i}
+              data-nav="a"
+              href={item.href}
+              target="_blank"
+              aria-current="page"
+              rel="noreferrer"
+            >
               <div
                 role="listitem"
                 className="w-dyn-item line-el w-inline-block"
@@ -304,7 +326,7 @@ const Projects = () => {
                 </div>
                 <div data-bp="tab" className="u _4"></div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
