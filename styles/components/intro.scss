@@ -35,7 +35,7 @@
   top: 0%;
   width: 100%;
   height: 100%;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -63,11 +63,25 @@
 
   @media screen and (max-width: 767px) {
     & {
-      height: 110%;
-      max-width: 120vw;
+      display: -ms-grid;
+      display: grid;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       grid-auto-columns: 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto auto auto auto;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+      -ms-grid-rows: auto;
+      grid-template-rows: auto;
+
+      grid-auto-flow: row;
+      -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      height: 100%;
+      // grid-auto-columns: 1fr;
+      // grid-template-columns: 1fr 1fr 1fr 1fr;
+      // grid-template-rows: auto auto auto auto;
     }
   }
 }
@@ -130,10 +144,10 @@
 
   @media screen and (max-width: 479px) {
     & {
-      grid-column: 1;
-      grid-column-end: 2;
-      grid-row: 1;
-      grid-row-end: 2;
+      grid-column-start: span 1;
+      grid-column-end: span 2;
+      grid-row-start: span 1;
+      grid-row-end: span 2;
     }
   }
 }
@@ -146,10 +160,10 @@
 
   @media screen and (max-width: 479px) {
     & {
-      grid-column: 2;
+      grid-column-start: 2;
       grid-column-end: 3;
-      grid-row: 0;
-      grid-row-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 3;
     }
   }
 }
@@ -162,10 +176,10 @@
 
   @media screen and (max-width: 479px) {
     & {
-      grid-column: 2;
+      grid-column-start: 2;
       grid-column-end: 3;
-      grid-row: 1;
-      grid-row-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4;
     }
   }
 }
@@ -178,10 +192,10 @@
 
   @media screen and (max-width: 479px) {
     & {
-      grid-column: 1;
+      grid-column-start: 1;
       grid-column-end: 2;
-      grid-row: 2;
-      grid-row-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 5;
     }
   }
 }
