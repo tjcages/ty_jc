@@ -57,7 +57,6 @@ export default class Dom {
     return [...document.querySelectorAll(id)].map((item) => {
       const el = new Char(item);
       el.setOut();
-      // console.log(item);
       return el;
     });
   }
@@ -66,7 +65,6 @@ export default class Dom {
     return [...document.querySelectorAll(id)].map((item) => {
       const el = new Word(item);
       el.setOut();
-      // console.log(item);
       return el;
     });
   }
@@ -75,7 +73,6 @@ export default class Dom {
     return [...document.querySelectorAll(id)].map((item) => {
       const el = new Alpha(item);
       el.setOut();
-      // console.log(item);
       return el;
     });
   }

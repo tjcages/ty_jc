@@ -4,7 +4,7 @@
   text-transform: none;
   font-family: "Holla";
 
-  &.italic {
+  .italic {
     font-style: italic;
   }
 
@@ -38,8 +38,12 @@
   font-family: dehogb, sans-serif;
   font-size: 12px;
   line-height: 0.9em;
-  font-style: italic;
   font-weight: 400;
+
+  &.italic {
+    font-style: italic;
+    background-color: red;
+  }
 
   @media screen and (max-width: 991px) {
     & {

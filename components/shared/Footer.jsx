@@ -6,7 +6,7 @@ const Footer = () => {
           <div data-dom="bl">
             No data is collected on this website apart from non-intrusive,
             anonymous count and usage statistics in an attempt to better
-            the navigation experience. <br />Data is collected in an untraceable and
+            the overall experience. <br />Data is collected in an untraceable and
             anonymous form. <br />
             <br />
             Crafted by {" "}

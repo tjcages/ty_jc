@@ -105,8 +105,6 @@ void main() {
 
     vec4 img = texture2D(u_diff, uv);
 
-
-
     gl_FragColor.rgb = img.rgb;
     gl_FragColor.a = 1.;
 }

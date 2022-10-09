@@ -10,7 +10,7 @@ const Images = () => {
           className="home-img"
         >
           <Image
-            src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316933e196af5752d003e18_IMG_0208.JPG"
+            src="/img/bust-rgb.jpg"
             alt=""
             data-utils="hid"
             sizes="100vw"
@@ -23,15 +23,14 @@ const Images = () => {
           id="w-node-c6f02f81-bf86-ddc5-ebd3-b2b8bddf651e-eb1dda55"
           className="home-img"
         >
-          <video
-            crossOrigin="anonymous"
-            playsInline={true}
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            src="https://assets.website-files.com/6176c3b63b320c8e291dda54/630617294dc69423131d7a61_b2efca96-9d60-47b4-bdaf-60a0655210ff%20(1)-transcode.mp4"
-            width="100%"
-          ></video>
+          <Image
+            crossOrigin=""
+            loading="eager"
+            src="/img/skull.jpg"
+            alt=""
+            width={256}
+            height={256}
+          />
         </div>
         <div
           data-gl="homei"
@@ -53,7 +52,7 @@ const Images = () => {
           className="home-img"
         >
           <Image
-            src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316933d599b5810dfdcb80b_IMG_9184.JPG"
+            src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316b28744c1d2ae983a1e9b_boulder.png"
             alt=""
             data-utils="hid"
             sizes="100vw"
@@ -67,7 +66,7 @@ const Images = () => {
           className="home-img"
         >
           <Image
-            src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316b28744c1d2ae983a1e9b_boulder.png"
+            src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316933d599b5810dfdcb80b_IMG_9184.JPG"
             alt=""
             data-utils="hid"
             sizes="100vw"

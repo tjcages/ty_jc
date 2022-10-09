@@ -17,15 +17,15 @@ uniform sampler2D u_checker;
 
 
 // ->> scanlines
- vec3 scanLines(in float uv, in float resolution, in float opacity) {
-     float intensity = sin((uv) * resolution * PI * 2.0);
-     intensity = ((0.5 * intensity) + 0.5) * 0.9 + 0.1;
-     return vec3(vec3(pow(intensity, opacity)));
- }
+vec3 scanLines(in float uv, in float resolution, in float opacity) {
+  float intensity = sin((uv) * resolution * PI * 2.0);
+  intensity = ((0.5 * intensity) + 0.5) * 0.9 + 0.1;
+  return vec3(vec3(pow(intensity, opacity)));
+}
 
 
  // >> noise
- vec4 permute(vec4 x){return mod(((x*34.0)+1.0)*x, 289.0);}
+vec4 permute(vec4 x){return mod(((x*34.0)+1.0)*x, 289.0);}
 vec4 taylorInvSqrt(vec4 r){return 1.79284291400159 - 0.85373472095314 * r;}
 vec3 fade(vec3 t) {return t*t*t*(t*(t*6.0-15.0)+10.0);}
 
@@ -99,7 +99,6 @@ float cnoise(vec3 P){
 
 // ->> uv remapping curvature
 vec2 curveRemapUV(in vec2 uv, in vec2 curv) {
-   
     uv *= 2.;
     uv -= 1.;
     

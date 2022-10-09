@@ -2,15 +2,33 @@ import React, { useState, useEffect } from "react";
 import Image from "next/future/image";
 import { isTablet } from "../../modules/utils/agents";
 
+import { Char } from "../../modules/anim/text.js";
+
 const Intro = () => {
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
     setMobile(isTablet());
+
+    initTitle();
   }, []);
 
+  const initTitle = (id = '[data-dom="h"]') => {
+    return [...document.querySelector("#intro").querySelectorAll(id)].map(
+      (item) => {
+        const el = new Char(item);
+        el.setOut();
+
+        setTimeout(() => {
+          el.animIn();
+        }, 1000);
+        return el;
+      }
+    );
+  };
+
   return (
-    <main className="s hero">
+    <main className="s hero" id="intro">
       <div data-dom="h" data-layer="under" className="logo-container">
         <div className="logo">
           <div>ty_jc</div>
@@ -50,7 +68,6 @@ const Intro = () => {
                   crossOrigin=""
                   loading="eager"
                   src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/63169cae3c13ed9383037f53_calc.jpeg"
-                  // src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/631683c2d3e0526177f79106_Gold.jpg"
                   alt=""
                   width={256}
                   height={256}
@@ -84,7 +101,7 @@ const Intro = () => {
                 <Image
                   crossOrigin=""
                   loading="eager"
-                  src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6319530265398e0f2f0bb107_throwback.jpg"
+                  src="/img/will.jpg"
                   alt=""
                   width={356}
                   height={356}
@@ -92,16 +109,16 @@ const Intro = () => {
               </figure>
             </div>
           </div>
-          <div className="img-container intro-image-5" data-title="Luminar">
+          <div className="img-container intro-image-5 lg" data-title="Luminar">
             <div data-utils="hid" className="grid-item w-embed">
               <figure data-gl="grid">
                 <Image
                   crossOrigin=""
                   loading="eager"
-                  src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/631952822068da3fe10fec5a_concept.jpg"
+                  src="/img/capital-wall.jpg"
                   alt=""
-                  width={256}
-                  height={256}
+                  width={356}
+                  height={356}
                 />
               </figure>
             </div>
@@ -112,14 +129,15 @@ const Intro = () => {
           >
             <div data-utils="hid" className="grid-item w-embed">
               <figure data-gl="grid">
-                <Image
-                  crossOrigin=""
-                  loading="eager"
-                  src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316933e3c5896d5b39bd35d_skull.png"
-                  alt=""
-                  width={256}
-                  height={256}
-                />
+                <video
+                  crossOrigin="anonymous"
+                  playsInline={true}
+                  autoPlay={true}
+                  loop={true}
+                  muted={true}
+                  src="https://assets.website-files.com/6176c3b63b320c8e291dda54/630617294dc69423131d7a61_b2efca96-9d60-47b4-bdaf-60a0655210ff%20(1)-transcode.mp4"
+                  width="100%"
+                ></video>
               </figure>
             </div>
           </div>
@@ -136,11 +154,10 @@ const Intro = () => {
           <div className="u _2">
             <div>
               <span className="is-alt">Recent Projects,</span> mixed
-              VIDEO&nbsp;AND&nbsp;IMAGES.
+              VIDEO&nbsp;&&nbsp;IMAGES,
               <br />
               <span className="is-lc">
-                Original pieces from custom databases, generated through
-                diffusion or GANs.
+                generated for CAPITAL, [GALLERY], & TY_JC
               </span>
             </div>
           </div>
