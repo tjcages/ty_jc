@@ -83,7 +83,8 @@ const Intro = () => {
                 <Image
                   crossOrigin=""
                   loading="eager"
-                  src="/img/will.jpg"
+                  // src="/img/will.jpg"
+                  src="https://uploads-ssl.webflow.com/6255f984fd98c820be9f9e0c/626afecaee849d2ce305e929_Group%20141-p-1080.jpeg"
                   alt=""
                   width={356}
                   height={356}
