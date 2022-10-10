@@ -92,6 +92,12 @@
 
 .u._custom {
   width: 364px;
+
+  @media screen and (max-width: 479px) {
+    & {
+      width: 64vw;
+    }
+  }
 }
 
 .u._4 {
