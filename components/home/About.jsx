@@ -10,8 +10,8 @@ const About = () => {
         >
           <div data-dom="bl" className="tx-xl">
             <span className="tx-intro">Forward Etude.</span>A collection of
-            unique projects, experiences, & ideas formed through a unquie design
-            practice that spans{" "}
+            projects, experiences, & ideas formed through a unquie design
+            practice spanning{" "}
             <span className="italic">physical and digital spaces</span>.
             {/* <span className="tx-intro">Forward Etude.</span>An experience based,
             Artificial Intelligence and generative art research collective

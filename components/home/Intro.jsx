@@ -2,30 +2,12 @@ import React, { useState, useEffect } from "react";
 import Image from "next/future/image";
 import { isTablet } from "../../modules/utils/agents";
 
-import { Char } from "../../modules/anim/text.js";
-
 const Intro = () => {
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
     setMobile(isTablet());
-
-    initTitle();
   }, []);
-
-  const initTitle = (id = '[data-dom="h"]') => {
-    return [...document.querySelector("#intro").querySelectorAll(id)].map(
-      (item) => {
-        const el = new Char(item);
-        el.setOut();
-
-        setTimeout(() => {
-          el.animIn();
-        }, 1000);
-        return el;
-      }
-    );
-  };
 
   return (
     <main className="s hero" id="intro">

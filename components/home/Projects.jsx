@@ -68,8 +68,7 @@ const data = [
     build: "Mini-Drop",
     result: "Visit drop",
     href: "https://twitter.com/jordihays/status/1512102958929887232",
-    image:
-      "https://uploads-ssl.webflow.com/5f47fcf4fc81fecce371f46f/62521ae826b5ff151826cb9d_624f09c370adc21a89f58dd3_starting-round.gif",
+    image: "/img/pokemon.png",
   },
   {
     num: "002",
@@ -252,7 +251,7 @@ const Projects = (props) => {
           {data
             .filter((item) => item.active !== false)
             .map((item, index) => (
-              <>
+              <div key={index}>
                 {item.image && (
                   <div className="project-image-container">
                     <div
@@ -264,19 +263,18 @@ const Projects = (props) => {
                       }}
                     >
                       <Image
-                        crossOrigin=""
-                        loading="eager"
-                        src={item.image}
-                        alt={item.title}
-                        width={256}
-                        height={256}
-                      />
+                          crossOrigin=""
+                          loading="eager"
+                          src={item.image}
+                          alt={item.title}
+                          width={256}
+                          height={256}
+                        />
                     </div>
                   </div>
                 )}
 
                 <a
-                  key={index}
                   data-nav="a"
                   href={item.href}
                   target="_blank"
@@ -357,7 +355,7 @@ const Projects = (props) => {
                     <div data-bp="tab" className="u _4"></div>
                   </div>
                 </a>
-              </>
+              </div>
             ))}
         </div>
       </div>

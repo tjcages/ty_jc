@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React from "react";
+import { Word } from "../modules/anim/text.js";
 import Dom from "../modules/dom";
 import Gl from "../modules/gl/gl";
 import Preloader from "../modules/preloader";
@@ -12,6 +13,64 @@ import { isTablet } from "../modules/utils/agents";
 
 import Header from "./shared/Header";
 import Canvas from "./shared/Canvas";
+
+const positions = [
+  {
+    company: "Capital",
+    position: "Marketing Engineer",
+    year: "Now",
+    href: "https://capital.xyz"
+  },
+  {
+    company: "TOCA",
+    position: "Digital Product Manager",
+    year: "2021",
+    href: "https://www.tocafootball.com/"
+  },
+  {
+    company: "Drivewayz",
+    position: "Founder",
+    year: "2020",
+  },
+  {
+    company: "Milwaukee Bucks",
+    position: "Lead iOS Engineer",
+    year: "2020",
+  },
+  {
+    company: "COAD",
+    position: "Founder",
+    year: "2019",
+  },
+  {
+    company: "Xfinity",
+    position: "Innovations Engineer",
+    year: "2018",
+  },
+  {
+    company: "EMP",
+    position: "Mechanical Engineer",
+    year: "2017",
+  },
+];
+
+const boards = [
+  {
+    company: "GOLD",
+    position: "Board Member",
+    year: "Now",
+  },
+  {
+    company: "EEF",
+    position: "Chairman – ME Board",
+    year: "2019",
+  },
+  {
+    company: "National MS Society",
+    position: "Campus Director of Philanthropy",
+    year: "2018",
+  },
+];
 
 class Main extends React.Component {
   constructor() {
@@ -55,6 +114,18 @@ class Main extends React.Component {
     this.gl = new Gl();
 
     this.update();
+    this.createParagraphs();
+  }
+
+  createParagraphs(id = '[data-dom="p"]') {
+    return [...document.querySelectorAll(id)].map((item) => {
+      const el = new Word(item);
+      el.setOut();
+      setTimeout(() => {
+        el.animIn();
+      }, 1000);
+      return el;
+    });
   }
 
   /*
@@ -89,6 +160,8 @@ class Main extends React.Component {
     if (this.scroll) this.scroll.scrollTo(0, true);
     if (this.dom) this.dom.create();
     if (this.gl) this.gl.handlePageChange(next);
+
+    this.createParagraphs();
   }
 
   /*
@@ -134,13 +207,13 @@ class Main extends React.Component {
 
         <div
           data-dom="fp"
-          data-scroll="100"
+          data-scroll="0"
           className="pw"
           style={{ transform: "translateY(0px)" }}
         >
           <main data-route="contact" className="w">
             <header className="s hero no-cap">
-              <div className="c gr-sl h-full mb-10">
+              <div className="c gr-sl h-full">
                 <a href="/" className="cont-link-w w-inline-block">
                   <div data-lk="b" data-dom="h">
                     <div
@@ -154,7 +227,7 @@ class Main extends React.Component {
                     </div>
                   </div>
                 </a>
-                <a href="/projects" className="cont-link-w w-inline-block">
+                {/* <a href="/projects" className="cont-link-w w-inline-block">
                   <div data-lk="b" data-dom="h">
                     <div
                       style={{
@@ -166,7 +239,7 @@ class Main extends React.Component {
                       Work ¬
                     </div>
                   </div>
-                </a>
+                </a> */}
               </div>
               <div className="c gr-sl h-full mt-10">
                 <div className="cont-w">
@@ -191,8 +264,10 @@ class Main extends React.Component {
                         position: "relative",
                       }}
                     >
-                      CELLULASTUD.IO
+                      CAPITAL
                     </div>
+                  </div>
+                  <div data-dom="p">
                     <div
                       style={{
                         display: "block",
@@ -200,226 +275,212 @@ class Main extends React.Component {
                         position: "relative",
                       }}
                     >
-                      Maji Royal Institute
+                      [GALLERY]
                     </div>
-                    <div
-                      style={{
-                        display: "block",
-                        textAlign: "start",
-                        position: "relative",
-                      }}
-                    >
-                      Arts of Prime
-                    </div>
-                    <div
-                      style={{
-                        display: "block",
-                        textAlign: "start",
-                        position: "relative",
-                      }}
-                    >
-                      NY Collectors Bureau
-                    </div>
-                    <div
-                      style={{
-                        display: "block",
-                        textAlign: "start",
-                        position: "relative",
-                      }}
-                    >
+                    <div data-dom="p">
                       <div
                         style={{
+                          display: "block",
+                          textAlign: "start",
                           position: "relative",
-                          display: "inline-block",
-                          transform: "translate(0px, 0%)",
                         }}
                       >
-                        SUPERFAST.GALLERY
+                        NY Founder Group
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="c gr-sl h-full mt-5">
-                <div className="cont-w">
-                  <div data-dom="p">
-                    <div
-                      style={{
-                        display: "block",
-                        textAlign: "start",
-                        position: "relative",
-                      }}
-                    >
-                      二
+              {positions.map((job, index) => (
+                <div
+                  key={index}
+                  className={`c gr-sl h-full ${index == 0 && "mt-5"}`}
+                >
+                  <div className="cont-w">
+                    <div data-dom="p">
+                      <div
+                        style={{
+                          display: "block",
+                          textAlign: "start",
+                          position: "relative",
+                        }}
+                      >
+                        {index == 0 ? "二" : ""}
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="cont-w">
-                  <a href="#" className="link-w w-inline-block">
-                    <div data-lk="b">
-                      <div data-dom="p">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                          }}
-                        >
+                  <div className="cont-w">
+                    <a href={job.href && job.href} target="_blank" rel="noreferrer" className="link-w w-inline-block">
+                      <div data-lk="b">
+                        <div data-dom="p">
                           <div
                             style={{
+                              display: "block",
+                              textAlign: "start",
                               position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0%)",
                             }}
                           >
-                            LICENSE@fwet.studio
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0%)",
+                              }}
+                            >
+                              {job.year}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="cont-w">
-                  <a href="#" className="link-w w-inline-block">
-                    <div data-lk="b">
-                      <div data-dom="p">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                          }}
-                        >
+                    </a>
+                  </div>
+                  <div className="cont-w">
+                    <a href={job.href && job.href} target="_blank" rel="noreferrer" className="link-w w-inline-block">
+                      <div data-lk="b">
+                        <div data-dom="p">
                           <div
                             style={{
+                              display: "block",
+                              textAlign: "start",
                               position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0%)",
                             }}
                           >
-                            ART@fwet.studio
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0%)",
+                              }}
+                            >
+                              {job.company}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="cont-w">
-                  <a href="#" className="link-w w-inline-block">
-                    <div data-lk="b">
-                      <div data-dom="p">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                          }}
-                        >
+                    </a>
+                  </div>
+                  <div className="cont-w">
+                    <a href={job.href && job.href} target="_blank" rel="noreferrer" className="link-w w-inline-block">
+                      <div data-lk="b">
+                        <div data-dom="p">
                           <div
                             style={{
+                              display: "block",
+                              textAlign: "start",
                               position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0%)",
                             }}
                           >
-                            HELLO@fwet.studio
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0%)",
+                              }}
+                            >
+                              {job.position}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="c gr-sl h-full mt-5">
-                <div className="cont-w">
-                  <div data-dom="p">
-                    <div
-                      style={{
-                        display: "block",
-                        textAlign: "start",
-                        position: "relative",
-                      }}
-                    >
-                      三
-                    </div>
+                    </a>
                   </div>
                 </div>
-                <div className="cont-w">
-                  <a href="#" className="link-w w-inline-block">
-                    <div data-lk="b">
-                      <div data-dom="p">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                          }}
-                        >
+              ))}
+              {boards.map((job, index) => (
+                <div
+                  key={index}
+                  className={`c gr-sl h-full ${index == 0 && "mt-5"}`}
+                >
+                  <div className="cont-w">
+                    <div data-dom="p">
+                      <div
+                        style={{
+                          display: "block",
+                          textAlign: "start",
+                          position: "relative",
+                        }}
+                      >
+                        {index == 0 ? "三" : ""}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="cont-w">
+                    <a href={job.href && job.href} target="_blank" rel="noreferrer" className="link-w w-inline-block">
+                      <div data-lk="b">
+                        <div data-dom="p">
                           <div
                             style={{
+                              display: "block",
+                              textAlign: "start",
                               position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0%)",
                             }}
                           >
-                            BIZ-EU@fwet.studio
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0%)",
+                              }}
+                            >
+                              {job.year}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="cont-w">
-                  <a href="#" className="link-w w-inline-block">
-                    <div data-lk="b">
-                      <div data-dom="p">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                          }}
-                        >
+                    </a>
+                  </div>
+                  <div className="cont-w">
+                    <a href={job.href && job.href} target="_blank" rel="noreferrer" className="link-w w-inline-block">
+                      <div data-lk="b">
+                        <div data-dom="p">
                           <div
                             style={{
+                              display: "block",
+                              textAlign: "start",
                               position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0%)",
                             }}
                           >
-                            BIZ-US@fwet.studio
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0%)",
+                              }}
+                            >
+                              {job.company}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="cont-w">
-                  <a href="#" className="link-w w-inline-block">
-                    <div data-lk="b">
-                      <div data-dom="p">
-                        <div
-                          style={{
-                            display: "block",
-                            textAlign: "start",
-                            position: "relative",
-                          }}
-                        >
+                    </a>
+                  </div>
+                  <div className="cont-w">
+                    <a href={job.href && job.href} target="_blank" rel="noreferrer" className="link-w w-inline-block">
+                      <div data-lk="b">
+                        <div data-dom="p">
                           <div
                             style={{
+                              display: "block",
+                              textAlign: "start",
                               position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0%)",
                             }}
                           >
-                            BIZ-WORLD@fwet.studio
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0%)",
+                              }}
+                            >
+                              {job.position}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
-              </div>
+              ))}
             </header>
           </main>
         </div>

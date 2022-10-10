@@ -3,6 +3,7 @@ import Dom from "../modules/dom";
 import Gl from "../modules/gl/gl";
 import Preloader from "../modules/preloader";
 import { Router } from "../modules/router";
+import { Char } from "../modules/anim/text.js";
 
 import Scroll from "../modules/scroll";
 
@@ -57,7 +58,22 @@ class Main extends React.Component {
     this.gl = new Gl();
 
     this.update();
+    this.initTitle();
   }
+
+  initTitle(id = '[data-dom="h"]') {
+    return [...document.querySelector("#intro").querySelectorAll(id)].map(
+      (item) => {
+        const el = new Char(item);
+        el.setOut();
+
+        setTimeout(() => {
+          el.animIn();
+        }, 1000);
+        return el;
+      }
+    );
+  };
 
   /*
    ** Pages

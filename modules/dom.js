@@ -12,7 +12,7 @@ export default class Dom {
   /* -- Lifecycle */
 
   create() {
-    this.clean();
+    // this.clean();
     this.titles = this.createTitles();
     this.paragraphs = this.createParagraphs();
     this.alpha = this.createAlpha();
