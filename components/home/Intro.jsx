@@ -66,7 +66,7 @@ const Intro = () => {
                 <Image
                   crossOrigin=""
                   loading="eager"
-                  src="https://uploads-ssl.webflow.com/5f162b0e0ce5746130d59063/6316933e196af5752d003e18_IMG_0208.JPG"
+                  src="https://uploads-ssl.webflow.com/6255f984fd98c820be9f9e0c/626b230324cefc412515c072_PR_120-27%202.jpg"
                   alt=""
                   width={356}
                   height={356}
